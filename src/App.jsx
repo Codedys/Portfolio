@@ -1,3 +1,7 @@
+import router from "./lib/router";
+import { RouterProvider } from 'react-router-dom';
+
+
 const App = () => {
   return (
     <div className="container">
@@ -44,7 +48,7 @@ const App = () => {
           </div>
         </div>
         <div className="page-content">
-          dddd
+        <RouterProvider router={router} />
 
         </div>
       </main>
