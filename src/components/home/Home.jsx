@@ -35,18 +35,16 @@ const Home = () => {
         </div>
       </div>
       <div className="project-card">
-
-      <h3>
-        Projects I have built and shipped... <span> View All</span>{" "}
-      </h3>
+        <h3>
+          Projects I have built and shipped... <span> View All</span>{" "}
+        </h3>
 
         <div className="p-cards">
           <img src="profile.jpeg" alt="" />
           <div className="description">
             <div className="title">
               <img src="profile.jpeg" alt="" />
-              <h5>Projets</h5> 
-
+              <h5>Projets</h5>
             </div>
             <p>Real time react chat app</p>
             <p className="date">14 May 2024</p>
@@ -57,8 +55,7 @@ const Home = () => {
           <div className="description">
             <div className="title">
               <img src="profile.jpeg" alt="" />
-              <h5>Projets</h5> 
-
+              <h5>Projets</h5>
             </div>
             <p>Real time react chat app</p>
             <p className="date">14 May 2024</p>
@@ -69,8 +66,7 @@ const Home = () => {
           <div className="description">
             <div className="title">
               <img src="profile.jpeg" alt="" />
-              <h5>Projets</h5> 
-
+              <h5>Projets</h5>
             </div>
             <p>Real time react chat app</p>
             <p className="date">14 May 2024</p>
@@ -81,14 +77,12 @@ const Home = () => {
           <div className="description">
             <div className="title">
               <img src="profile.jpeg" alt="" />
-              <h5>Projets</h5> 
-
+              <h5>Projets</h5>
             </div>
             <p>Real time react chat app</p>
             <p className="date">14 May 2024</p>
           </div>
         </div>
-
       </div>
     </div>
   );
