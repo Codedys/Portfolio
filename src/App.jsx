@@ -1,6 +1,5 @@
 import router from "./lib/router";
-import { RouterProvider } from 'react-router-dom';
-
+import { RouterProvider } from "react-router-dom";
 
 const App = () => {
   return (
@@ -8,48 +7,77 @@ const App = () => {
       <nav>
         <div className="userinfo">
           <img src="./profile.jpeg" alt="" />
-          <span>Gerald Jackson</span>
+          <div className="name">
+            <h3>Gerald Jackson</h3>
+            <span>Software Engineer</span>
+          </div>
           <img className="icon" src="./light.png" alt="" />
         </div>
         <div className="socials">
-          <img src="./github.png" alt="" />
+          <img src="email.png" alt="" />
           <img src="linkedin.png" alt="" />
           <img src="twitter.png" alt="" />
         </div>
       </nav>
 
-
-      
       <main>
         <div className="sidebar">
           <div className="route-elements">
             <img src="home.png" alt="" />
-            <span>Home</span>
+            <h4>Home</h4>
+          </div>
+          <div className="route-elements">
+            <img src="schedule.png" alt="" />
+            <h4>Timeline</h4>
           </div>
           <div className="route-elements">
             <img src="about.png" alt="" />
-            <span>About</span>
+            <h4>About</h4>
           </div>
           <div className="route-elements">
             <img src="projects.png" alt="" />
-            <span>Projects</span>
+            <h4>Projects</h4>
           </div>
           <div className="route-elements">
             <img src="blog.png" alt="" />
-            <span>Blog</span>
+            <h4>Blog</h4>
           </div>
           <div className="route-elements">
-            <img src="resources.png" alt="" />
-            <span>Resources</span>
+            <img className="desktop" src="resources.png" alt="" />
+            <div className="underitems">
+              <h3>Resources</h3>
+              <div>
+                <img src="cv.png" alt="" />
+                 <span>My CV</span>
+              </div>
+              <div>
+                <img src="bucket.png" alt="" /> 
+                <span>Bucket List</span>
+              </div>
+              <div>
+                <img src="bookmark.png" alt="" /> 
+                <span>Bookmarks</span>
+              </div>
+            </div>
           </div>
           <div className="route-elements">
-            <img src="contact.png" alt="" />
-            <span>Contact</span>
+            <img className="desktop" src="contact.png" alt="" />
+            <div className="underitems">
+              <h3>Contacts</h3>
+              <div>
+                <img src="email.png" alt="" /> <span>Shoot me an email !</span>
+              </div>
+              <div>
+                <img src="twitter.png" alt="" /> <span>@Jackson__Gerald</span>
+              </div>
+              <div>
+                <img src="linkedin.png" alt="" /> <span>Connect with me on linked in</span>
+              </div>
+            </div>
           </div>
         </div>
         <div className="page-content">
-        <RouterProvider router={router} />
-
+          <RouterProvider router={router} />
         </div>
       </main>
     </div>
