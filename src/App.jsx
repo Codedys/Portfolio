@@ -70,6 +70,7 @@ const App = () => {
               </div>
               <div>
                 <img src="bucket.png" alt="" />
+                {/* <a href="/bucketlist"></a> */}
                 <span>Bucket List</span>
               </div>
               <div>

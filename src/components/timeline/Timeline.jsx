@@ -1,13 +1,10 @@
-import "./timeline.css"
+import "./timeline.css";
 
 const Timeline = () => {
   return (
     <div className="timeline-main">
-      <h1>
-      ⏳ Timeline
-      </h1>
-      <p>Here's a Chronological list of updates on what i've been upto
-      </p>
+      <h1>⏳ Timeline</h1>
+      <p>Here's a Chronological list of updates on what i've been upto</p>
 
       <div className="timeline-card">
         <div className="t-card">
@@ -42,7 +39,7 @@ const Timeline = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Timeline
+export default Timeline;
