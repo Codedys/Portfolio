@@ -30,6 +30,8 @@ body {
     border-bottom: 2px solid rgba(159, 166, 168, 0.329);
     padding-left: 30px;
     padding-right: 30px;
+    background-color: rgba(248, 250, 252,0.5);
+    
 
     .userinfo {
       display: flex;
@@ -68,6 +70,7 @@ body {
     width: 100%;
     display: flex;
     gap: 20%;
+    position: fixed;
 
     .sidebar {
       height: 100%;
@@ -77,13 +80,23 @@ body {
       display: flex;
       flex-direction: column;
       gap: 5px;
+      
 
       .route-elements {
+
         display: flex;
-        align-items: center;
-        gap: 15px;
-        margin-left: 20px;
-        margin-top: 20px;
+          align-items: center;
+          gap: 15px;
+          margin-left: 20px;
+          margin-top: 20px;
+        a{
+
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          text-decoration: none;
+          color: inherit;
+        }
 
         .desktop {
           display: none;
@@ -130,6 +143,7 @@ body {
     nav {
       padding-left: 5px;
       padding-right: 5px;
+      
 
       .userinfo {
         gap: 10px;
@@ -156,6 +170,8 @@ body {
     }
 
     main {
+      position: static;
+
       .sidebar {
         height: 80px;
         width: 90%;

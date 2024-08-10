@@ -10,10 +10,27 @@ import Timeline from "../components/timeline/Timeline";
 
 
 const router = createBrowserRouter([
+  
   {
     path: "/",
+    element: <Home/>,
+  },
+  {
+    path: "/about",
+    element: <About/>,
+  },
+  {
+    path: "/projects",
+    element: <Projects/>,
+  },
+  {
+    path: "/blog",
+    element: <Blog/>,
+  }, {
+    path: "/timeline",
     element: <Timeline/>,
   },
+
 ]);
 
 export default router;

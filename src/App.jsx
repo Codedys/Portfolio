@@ -1,5 +1,6 @@
+import { RouterProvider, Link } from "react-router-dom";
 import router from "./lib/router";
-import { RouterProvider } from "react-router-dom";
+
 
 const App = () => {
   return (
@@ -23,24 +24,41 @@ const App = () => {
       <main>
         <div className="sidebar">
           <div className="route-elements">
-            <img src="home.png" alt="" />
-            <h4>Home</h4>
+            <a href="/">
+            
+              <img src="home.png" alt="" />
+              <h4>Home</h4>
+            </a>
+           
+          
           </div>
           <div className="route-elements">
-            <img src="schedule.png" alt="" />
-            <h4>Timeline</h4>
+              <a href="/timeline">
+              <img src="schedule.png" alt="" />
+              <h4>Timeline</h4>
+              </a>
+            
           </div>
           <div className="route-elements">
-            <img src="about.png" alt="" />
-            <h4>About</h4>
+              <a href="/about">
+              <img src="about.png" alt="" />
+              <h4>About</h4>
+              </a>
+            
           </div>
           <div className="route-elements">
-            <img src="projects.png" alt="" />
-            <h4>Projects</h4>
+            <a href="/projects">
+              <img src="projects.png" alt="" />
+              <h4>Projects</h4>
+            </a>
+            
           </div>
           <div className="route-elements">
-            <img src="blog.png" alt="" />
-            <h4>Blog</h4>
+              <a href="/blog">
+              <img src="blog.png" alt="" />
+              <h4>Blog</h4>
+              </a>
+           
           </div>
           <div className="route-elements">
             <img className="desktop" src="resources.png" alt="" />
@@ -48,14 +66,14 @@ const App = () => {
               <h3>Resources</h3>
               <div>
                 <img src="cv.png" alt="" />
-                 <span>My CV</span>
+                <span>My CV</span>
               </div>
               <div>
-                <img src="bucket.png" alt="" /> 
+                <img src="bucket.png" alt="" />
                 <span>Bucket List</span>
               </div>
               <div>
-                <img src="bookmark.png" alt="" /> 
+                <img src="bookmark.png" alt="" />
                 <span>Bookmarks</span>
               </div>
             </div>
@@ -65,13 +83,16 @@ const App = () => {
             <div className="underitems">
               <h3>Contacts</h3>
               <div>
-                <img src="email.png" alt="" /> <span>Shoot me an email !</span>
+                <img src="email.png" alt="" />
+                <span>Shoot me an email !</span>
               </div>
               <div>
-                <img src="twitter.png" alt="" /> <span>@Jackson__Gerald</span>
+                <img src="twitter.png" alt="" />
+                <span>@Jackson__Gerald</span>
               </div>
               <div>
-                <img src="linkedin.png" alt="" /> <span>Connect with me on linked in</span>
+                <img src="linkedin.png" alt="" />
+                <span>Connect with me on LinkedIn</span>
               </div>
             </div>
           </div>
