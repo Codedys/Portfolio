@@ -3,9 +3,8 @@ import { useEffect, useState } from "react";
 import posts from "../../lib/query";
 
 const Blog = () => {
-
-
   const [publications, setPublications] = useState(null);
+  // const [date, setDate] = useState(null);
 
   useEffect(() => {
     async function allPublications(query) {
@@ -18,56 +17,74 @@ const Blog = () => {
           body: JSON.stringify({ query }),
         });
 
-       const data = await response.json()
-       return data
-        
+        const data = await response.json();
+        return data;
       } catch (error) {
         console.log(error);
       }
-
-      
     }
-     
+
     async function fetchPublications() {
       const values = await allPublications(posts);
       if (values) {
-        setPublications(values);
+        const value = values.data.publication.posts.edges;
+        setPublications(value);
       }
     }
-    
-    fetchPublications();
 
+    fetchPublications();
   }, []);
 
-  const isoString  = publications.data.publication.posts.edges[0].node.publishedAt
-  const date = new Date(isoString).toISOString().split('T')[0];
+  function formatDate(dateString) {
+    const date = new Date(dateString);
+    const day = date.getUTCDate();
+    const month = date.toLocaleString("default", { month: "long" });
+    const year = date.getUTCFullYear();
+
+    const suffix = (day) =>
+      day % 10 === 1 && day !== 11
+        ? "st"
+        : day % 10 === 2 && day !== 12
+        ? "nd"
+        : day % 10 === 3 && day !== 13
+        ? "rd"
+        : "th";
+
+    return `${day}${suffix(day)} ${month} ${year}`;
+  }
 
   return (
     <div className="blog-main">
       <h1>📝 Blog</h1>
-      <p>Thoughts about design, development,building products and life</p>
+      <p>Thoughts about design, development, building products, and life</p>
 
-      <div className="blog">
-      {publications ? ( 
-          <>
-            <a href="https://www.example.com" target="_blank">
-              {publications.data.publication.posts.edges[0].node.title}
+      {publications ? (
+        publications.map((element,index)=>(
+          
+          <div key={index} className="blog">
+            <a
+              href="https://www.example.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              {element.node.title}
             </a>
-            <p>{publications.data.publication.posts.edges[0].node.brief}</p>
+            <p>{element.node.brief}</p>
             <div className="stamps">
               <div className="timestamp">
                 <img src="clock.png" alt="clock" />
-                <p>{date}</p>
+                <p>{formatDate(element.node.publishedAt)}</p>
               </div>
               <div className="readtime">
-                <p>{publications.data.publication.posts.edges[0].node.readTimeInMinutes} min</p>
+                <p>{element.node.readTimeInMinutes} min</p>
               </div>
             </div>
-          </>
-        ) : (
-          <p>Loading...</p> // Loading state while data is being fetched
-        )}
-      </div>
+          </div>
+        
+      ))
+      ) : (
+        <p>Loading...</p>
+      )}
     </div>
   );
 };
