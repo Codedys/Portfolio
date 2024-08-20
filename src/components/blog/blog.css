@@ -27,23 +27,29 @@
             margin-top: 10px;
             font-size: 15px;
         }
-        .timestamp{
-            margin-top: 10px;
+        .stamps{
+
             display: flex;
-            align-items: center;
-            gap: 10px;
+            gap: 40px;
 
-            img{
-                height: 15px;
-                width: 15px;
-
+            .timestamp{
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                
+                img{
+                    height: 15px;
+                    width: 15px;
+                    
+                }
+                p{ 
+                    margin-top: 0px;
+                    color: rgb(77,101,128);
+                }
             }
-            p{ 
-                margin-top: 0px;
-                color: rgb(77,101,128);
-            }
+            
         }
-
     }
 
 }
