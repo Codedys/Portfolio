@@ -19,24 +19,30 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/about",
+        path: "about",
         element: <About />,
       },
       {
-        path: "/projects",
+        path: "projects",
         element: <Projects />,
       },
       {
-        path: "/blog",
+        path: "blog",
         element: <Blog />,
+        children: [
+          {
+            path: "post",
+            element: <Blogpost />,
+          },
+        ],
       },
 
       {
-        path: "/timeline",
+        path: "timeline",
         element: <Timeline />,
       },
       {
-        path: "/bucketlist",
+        path: "bucketlist",
         element: <Bucketlist />,
       },
     ],

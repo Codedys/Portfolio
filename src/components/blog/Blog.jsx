@@ -1,10 +1,22 @@
 import "./blog.css";
+import { Outlet,useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import posts from "../../lib/query";
 
+
 const Blog = () => {
   const [publications, setPublications] = useState(null);
-  // const [date, setDate] = useState(null);
+  const [clicked, setClicked] = useState(true);
+  const navigate = useNavigate();
+  
+  function handleClick (){
+
+    navigate("/blog/post");
+    setClicked(false)
+
+
+  } 
+
 
   useEffect(() => {
     async function allPublications(query) {
@@ -55,34 +67,35 @@ const Blog = () => {
 
   return (
     <div className="blog-main">
-      <h1>📝 Blog</h1>
-      <p>Thoughts about design, development, building products, and life</p>
+      {clicked ? (
+        <div className="listofblogs">
+          <h1>📝 Blog</h1>
+          <p>Thoughts about design, development, building products, and life</p>
 
-      {publications ? (
-        publications.map((element,index)=>(
-          
-          <div key={index} className="blog">
-            <a
-              href="https://www.example.com"
-        
-              >
-              {element.node.title}
-            </a>
-            <p>{element.node.brief}</p>
-            <div className="stamps">
-              <div className="timestamp">
-                <img src="clock.png" alt="clock" />
-                <p>{formatDate(element.node.publishedAt)}</p>
+          {publications ? (
+            publications.map((element, index) => (
+              <div key={index} className="blog">
+                <a href="/blog/post" onClick={(e) => { e.preventDefault(); handleClick(); }}>{element.node.title}</a>
+                <p>{element.node.brief}</p>
+                <div className="stamps">
+                  <div className="timestamp">
+                    <img src="clock.png" alt="clock" />
+                    <p>{formatDate(element.node.publishedAt)}</p>
+                  </div>
+                  <div className="readtime">
+                    <p>{element.node.readTimeInMinutes} min</p>
+                  </div>
+                </div>
               </div>
-              <div className="readtime">
-                <p>{element.node.readTimeInMinutes} min</p>
-              </div>
-            </div>
-          </div>
-        
-      ))
+            ))
+          ) : (
+            <p>Loading...</p>
+          )}
+        </div>
       ) : (
-        <p>Loading...</p>
+        
+          <Outlet />
+       
       )}
     </div>
   );

@@ -1,0 +1,8 @@
+.blogpost-main{
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    overflow-y: auto;
+    padding-right: 10px;
+    
+}

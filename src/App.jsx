@@ -28,25 +28,25 @@ const App = () => {
             </Link>
           </div>
           <div className="route-elements">
-            <Link to="/timeline">
+            <Link to="timeline">
               <img src="schedule.png" alt="" />
               <h4>Timeline</h4>
             </Link>
           </div>
           <div className="route-elements">
-            <Link to="/about">
+            <Link to="about">
               <img src="about.png" alt="" />
               <h4>About</h4>
             </Link>
           </div>
           <div className="route-elements">
-            <Link to="/projects">
+            <Link to="projects">
               <img src="projects.png" alt="" />
               <h4>Projects</h4>
             </Link>
           </div>
           <div className="route-elements">
-            <Link to="/blog">
+            <Link to="blog">
               <img src="blog.png" alt="" />
               <h4>Blog</h4>
             </Link>

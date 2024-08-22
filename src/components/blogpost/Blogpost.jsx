@@ -2,7 +2,8 @@ import "./blogpost.css";
 
 const Blogpost = () => {
   return (
-    <div className=''>Blogpost</div>
+    <div className='blogpost-main'>
+      Blogpost</div>
   )
 }
 
