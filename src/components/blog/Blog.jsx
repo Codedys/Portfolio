@@ -64,8 +64,7 @@ const Blog = () => {
           <div key={index} className="blog">
             <a
               href="https://www.example.com"
-              target="_blank"
-              rel="noopener noreferrer"
+        
               >
               {element.node.title}
             </a>

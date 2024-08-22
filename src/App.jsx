@@ -1,6 +1,4 @@
-import { RouterProvider, Link } from "react-router-dom";
-import router from "./lib/router";
-
+import { Outlet, Link } from "react-router-dom";
 
 const App = () => {
   return (
@@ -24,41 +22,34 @@ const App = () => {
       <main>
         <div className="sidebar">
           <div className="route-elements">
-            <a href="/">
-            
+            <Link to="/">
               <img src="home.png" alt="" />
               <h4>Home</h4>
-            </a>
-           
-          
+            </Link>
           </div>
           <div className="route-elements">
-              <a href="/timeline">
+            <Link to="/timeline">
               <img src="schedule.png" alt="" />
               <h4>Timeline</h4>
-              </a>
-            
+            </Link>
           </div>
           <div className="route-elements">
-              <a href="/about">
+            <Link to="/about">
               <img src="about.png" alt="" />
               <h4>About</h4>
-              </a>
-            
+            </Link>
           </div>
           <div className="route-elements">
-            <a href="/projects">
+            <Link to="/projects">
               <img src="projects.png" alt="" />
               <h4>Projects</h4>
-            </a>
-            
+            </Link>
           </div>
           <div className="route-elements">
-              <a href="/blog">
+            <Link to="/blog">
               <img src="blog.png" alt="" />
               <h4>Blog</h4>
-              </a>
-           
+            </Link>
           </div>
           <div className="route-elements">
             <img className="desktop" src="resources.png" alt="" />
@@ -99,7 +90,7 @@ const App = () => {
           </div>
         </div>
         <div className="page-content">
-          <RouterProvider router={router} />
+          <Outlet />
         </div>
       </main>
     </div>
