@@ -6,6 +6,9 @@ import Projects from "../components/projects/Projects";
 import Blog from "../components/blog/Blog";
 import Timeline from "../components/timeline/Timeline";
 import Bucketlist from "../components/bucketlist/Bucketlist";
+import Bloglist from "../components/bloglist/Bloglist";
+import {posts}  from "./query";
+import { allPublications } from "../components/bloglist/Bloglist";
 
 import Blogpost from "../components/blogpost/Blogpost";
 
@@ -31,8 +34,13 @@ const router = createBrowserRouter([
         element: <Blog />,
         children: [
           {
-            path: "post",
-            element: <Blogpost />,
+            index:true,
+            loader:  async () => allPublications(posts),
+            element: <Bloglist/>,
+          },
+          {
+            path:":id",
+            element: <Blogpost/>,
           },
         ],
       },

@@ -1,4 +1,4 @@
-const posts = `
+ export const posts = `
 query publication {
     publication(host: "blog.developerdao.com") {
         isTeam
@@ -10,13 +10,23 @@ query publication {
                     brief
                     id
                     readTimeInMinutes
-                    publishedAt 
+                    publishedAt
                 }
             }
         }
     }
 }
 
+`;
+export const post = `
+query Post($id: ID!) {
+  post(id: $id) {
+   content {
+   html
+   }
+}
+}
+
 `
 
-export default posts
+
