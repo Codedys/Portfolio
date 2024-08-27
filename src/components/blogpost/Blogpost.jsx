@@ -1,4 +1,4 @@
-// import "./blogpost.css";
+import "./blogpost.css";
 import { useEffect, useState } from "react";
 import { post } from "../../lib/query";
 import { useParams } from "react-router-dom";
@@ -36,7 +36,6 @@ const Blogpost = () => {
     if (blog) {
       Prism.highlightAll();
 
-    
       const codeBlocks = document.querySelectorAll("pre code");
       codeBlocks.forEach((block) => {
         const button = document.createElement("button");
