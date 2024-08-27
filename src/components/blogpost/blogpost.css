@@ -1,8 +1,87 @@
-.blogpost-main{
+/* .blogpost-main{
     height: 100%;
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
     overflow-y: auto;
     padding-right: 10px;
+
+   
+       img{
+          
+          width: 100%;
+          height: auto; 
+          object-fit: contain;
+   
+       }
+       
+    pre code {
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid #444;
+        background-color: #080808;
+        color: #e0e0e0;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        display: block;
+        font-family: "Fira Code", Consolas, "Courier New", Courier, monospace;
+    }
     
+    
+    pre code .keyword {
+        color: #ff79c6; 
+        font-weight: bold;
+    }
+    
+    pre code .string {
+        color: #50fa7b; 
+    }
+    
+    pre code .comment {
+        color: #6272a4; 
+        font-style: italic;
+    }
+    
+    pre code .function {
+        color: #8be9fd;
+    }
+    
+    pre code .variable {
+        color: #f1fa8c; 
+    }
+    
+    pre code .number {
+        color: #bd93f9; 
+    }
+    
+   
+    pre code .operator {
+        color: #ffb86c; 
+    }
+    
+    pre code .punctuation {
+        color: #ffb86c; 
+    }
+    
+    pre code .boolean {
+        color: #ff5555; 
+    }
+    
+    
+} */
+
+
+.blogpost-main{
+    height: 100%;
+    width: 90%;
+    margin-top: 10px;
+    overflow-y: auto;
+    padding-right: 10px;
+   
+    img{
+       width: 100%;
+       height: auto; 
+       object-fit: contain;
+    }
 }
+
+/* Separate syntax highlighting styles to apply globally */

@@ -1,9 +1,10 @@
 import "./blogpost.css";
-
-import { useEffect } from "react";
+import { useEffect,useState  } from "react";
 import { post } from "../../lib/query";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import Prism from "prismjs";
+import "prismjs/themes/prism-tomorrow.css";
+
 
 const Blogpost = () => {
   const { id } = useParams();
@@ -23,22 +24,26 @@ const Blogpost = () => {
           }),
         });
         const res = await data.json();
-
-
-        setBlog(res.data.post.content.html)
+        setBlog(res.data.post.content.html);
       } catch (error) {
         console.log(error);
       }
     }
 
-    fetchSinglePost(post)
-  
+    fetchSinglePost(post);
   }, [id]);
 
+
+  useEffect(() => {
+    if (blog) {
+      Prism.highlightAll(); 
+    }
+  }, [blog]);
+
   return (
-    <div>
+    <div className="blogpost-main">
       {blog ? (
-        <div dangerouslySetInnerHTML={{ __html: blog }} />
+        <div  dangerouslySetInnerHTML={{ __html: blog }} />
       ) : (
         <p>Loading...</p>
       )}
