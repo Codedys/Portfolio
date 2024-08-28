@@ -1,6 +1,10 @@
 import { Outlet, Link } from "react-router-dom";
+import Popup from "./components/popup/Popup";
+import { useState } from "react";
 
 const App = () => {
+  const [toggle, setToggle] = useState(false);
+
   return (
     <div className="container">
       <nav>
@@ -22,37 +26,40 @@ const App = () => {
       <main>
         <div className="sidebar">
           <div className="route-elements">
-            <Link to="/">
+            <Link className="links" to="/">
               <img src="/home.png" alt="" />
               <h4>Home</h4>
             </Link>
           </div>
           <div className="route-elements">
-            <Link to="timeline">
+            <Link className="links" to="timeline">
               <img src="/schedule.png" alt="" />
               <h4>Timeline</h4>
             </Link>
           </div>
           <div className="route-elements">
-            <Link to="about">
+            <Link className="links" to="about">
               <img src="/about.png" alt="" />
               <h4>About</h4>
             </Link>
           </div>
           <div className="route-elements">
-            <Link to="projects">
+            <Link className="links" to="projects">
               <img src="/projects.png" alt="" />
               <h4>Projects</h4>
             </Link>
           </div>
           <div className="route-elements">
-            <Link to="blog">
+            <Link className="links" to="blog">
               <img src="/blog.png" alt="" />
               <h4>Blog</h4>
             </Link>
           </div>
           <div className="route-elements">
-            <img className="desktop" src="resources.png" alt="" />
+            <Link onClick={()=> setToggle(!toggle)} className="desktop">
+              <img src="resources.png" alt="" />
+              <h4>Resources</h4>
+            </Link>
             <div className="underitems">
               <h3>Resources</h3>
               <div>
@@ -61,7 +68,6 @@ const App = () => {
               </div>
               <div>
                 <img src="/bucket.png" alt="" />
-                {/* <a href="/bucketlist"></a> */}
                 <span>Bucket List</span>
               </div>
               <div>
@@ -71,7 +77,6 @@ const App = () => {
             </div>
           </div>
           <div className="route-elements">
-            <img className="desktop" src="contact.png" alt="" />
             <div className="underitems">
               <h3>Contacts</h3>
               <div>
@@ -90,6 +95,7 @@ const App = () => {
           </div>
         </div>
         <div className="page-content">
+          {toggle ? <Popup /> : null}
           <Outlet />
         </div>
       </main>
