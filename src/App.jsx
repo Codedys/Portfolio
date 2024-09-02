@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, NavLink } from "react-router-dom";
 import Popup from "./components/popup/Popup";
 import { useState } from "react";
 
@@ -27,49 +27,86 @@ const App = () => {
           <img className="icon" src="/light.png" alt="" />
         </div>
         <div className="socials">
-          <a href="mailto:oberegeraldjackson@gmail.com" target="_blank">
-            <img src="/email.png" alt="" />
-          </a>
-          <a >
-            <img src="/linkedin.png" alt="" />
-          </a>
-          <a href="https://x.com/Jackson__Gerald">
-            <img src="/twitter.png" alt="" />
-          </a>
+          <a href=""></a>
+          <img src="/email.png" alt="" />
+          <a href=""></a>
+          <img src="/linkedin.png" alt="" />
+
+          <img src="/twitter.png" alt="" />
         </div>
       </nav>
 
       <main>
         <div className="sidebar">
           <div className="route-elements">
-            <Link className="links" to="/">
+            <NavLink
+              className={({ isActive, isPending }) =>
+                `links ${
+
+                  isPending ? "pending" : isActive ? "active" : ""
+                }`
+              }
+              to="/"
+            >
               <img src="/home.png" alt="" />
               <h4>Home</h4>
-            </Link>
+            </NavLink>
           </div>
           <div className="route-elements">
-            <Link className="links" to="timeline">
+            <NavLink
+              className={({ isActive, isPending }) =>
+                `links ${
+
+                  isPending ? "pending" : isActive ? "active" : ""
+                }`
+              }
+              to="timeline"
+            >
               <img src="/schedule.png" alt="" />
               <h4>Timeline</h4>
-            </Link>
+            </NavLink>
           </div>
           <div className="route-elements">
-            <Link className="links" to="about">
+            <NavLink
+              className={({ isActive, isPending }) =>
+                `links ${
+
+                  isPending ? "pending" : isActive ? "active" : ""
+                }`
+              }
+              to="about"
+            >
               <img src="/about.png" alt="" />
               <h4>About</h4>
-            </Link>
+            </NavLink>
           </div>
           <div className="route-elements">
-            <Link className="links" to="projects">
+            <NavLink
+              className={({ isActive, isPending }) =>
+                `links ${
+
+                  isPending ? "pending" : isActive ? "active" : ""
+                }`
+              }
+              to="projects"
+            >
               <img src="/projects.png" alt="" />
               <h4>Projects</h4>
-            </Link>
+            </NavLink>
           </div>
           <div className="route-elements">
-            <Link className="links" to="blog">
+            <NavLink
+              className={({ isActive, isPending }) =>
+                `links ${
+
+                  isPending ? "pending" : isActive ? "active" : ""
+                }`
+              }
+              to="blog"
+            >
               <img src="/blog.png" alt="" />
               <h4>Blog</h4>
-            </Link>
+            </NavLink>
           </div>
           <div className="route-elements">
             <Link onClick={handleToggle} className="desktop">
@@ -86,7 +123,7 @@ const App = () => {
                 <img src="/bucket.png" alt="" />
                 <span>Bucket List</span>
               </Link>
-              <Link className="ulinks" to="bookmarks">
+              <Link className="ulinks">
                 <img src="/bookmark.png" alt="" />
                 <span>Bookmarks</span>
               </Link>

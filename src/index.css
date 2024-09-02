@@ -84,13 +84,26 @@ body {
         gap: 15px;
         margin-left: 20px;
         margin-top: 20px;
+
         a {
           display: flex;
           align-items: center;
           gap: 15px;
           text-decoration: none;
           color: inherit;
+        }
 
+        .links.active {
+          color: #007bff;
+          font-weight: bold;
+        }
+
+        .links:hover {
+          color: #57a2f1;
+        }
+        .links.pending{
+          cursor: not-allowed;
+          color: #ff8c00;
         }
 
         .desktop {
@@ -101,30 +114,36 @@ body {
           flex-direction: column;
           gap: 20px;
 
-          a{
+          a:hover {
+            color: #57a2f1;
+          }
+          a {
             text-decoration: none;
             color: inherit;
-            
+
             span {
-              
               font-weight: bold;
               font-size: medium;
             }
-
           }
-
+          div:hover {
+            color: #57a2f1;
+          }
           div {
             cursor: pointer;
             img {
               height: 20px;
               width: 20px;
-              
             }
             span {
               margin-left: 10px;
               font-weight: bold;
               font-size: medium;
             }
+          }
+
+          .ulinks:hover {
+            color: #57a2f1;
           }
           .ulinks {
             img {
@@ -133,7 +152,6 @@ body {
               cursor: pointer;
             }
             span {
-              
               font-weight: bold;
               font-size: medium;
             }
@@ -163,7 +181,7 @@ body {
   .container {
     nav {
       width: 90%;
-      position:fixed ;
+      position: fixed;
 
       .userinfo {
         gap: 10px;
@@ -211,6 +229,12 @@ body {
           justify-content: center;
           margin-top: 5px;
 
+          .links.active {
+            color: #007bff; /* Change the color for the active link */
+            font-weight: bold; /* Make the active link bold */
+            border-bottom: 2px solid #007bff; /* Add an underline or border */
+          }
+
           .desktop {
             display: flex;
             flex-direction: column;
@@ -226,19 +250,15 @@ body {
             }
           }
           .underitems {
-
             display: none;
             flex-direction: column;
             gap: 20px;
 
             div {
-
-              
               img {
                 height: 20px;
                 width: 20px;
                 cursor: pointer;
-                
               }
               span {
                 margin-left: 10px;
@@ -246,7 +266,6 @@ body {
                 font-size: medium;
               }
             }
-            
           }
           .links {
             display: flex;
