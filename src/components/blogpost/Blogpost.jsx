@@ -59,7 +59,7 @@ const Blogpost = () => {
   return (
     <div className="blogpost-main">
       {blog ? (
-        <div dangerouslySetInnerHTML={{ __html: blog }} />
+        <div  className =" content"dangerouslySetInnerHTML={{ __html: blog }} />
       ) : (
         <p>Loading...</p>
       )}

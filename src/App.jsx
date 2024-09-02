@@ -5,6 +5,16 @@ import { useState } from "react";
 const App = () => {
   const [toggle, setToggle] = useState(false);
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/jacksonobere.pdf";
+    link.download = "ObereCv.pdf";
+    link.click();
+  };
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
+
   return (
     <div className="container">
       <nav>
@@ -17,9 +27,15 @@ const App = () => {
           <img className="icon" src="/light.png" alt="" />
         </div>
         <div className="socials">
-          <img src="/email.png" alt="" />
-          <img src="/linkedin.png" alt="" />
-          <img src="/twitter.png" alt="" />
+          <a href="mailto:oberegeraldjackson@gmail.com" target="_blank">
+            <img src="/email.png" alt="" />
+          </a>
+          <a >
+            <img src="/linkedin.png" alt="" />
+          </a>
+          <a href="https://x.com/Jackson__Gerald">
+            <img src="/twitter.png" alt="" />
+          </a>
         </div>
       </nav>
 
@@ -56,46 +72,48 @@ const App = () => {
             </Link>
           </div>
           <div className="route-elements">
-            <Link onClick={()=> setToggle(!toggle)} className="desktop">
+            <Link onClick={handleToggle} className="desktop">
               <img src="resources.png" alt="" />
               <h4>Resources</h4>
             </Link>
             <div className="underitems">
               <h3>Resources</h3>
-              <div>
+              <div onClick={handleDownload}>
                 <img src="/cv.png" alt="" />
                 <span>My CV</span>
               </div>
-              <div>
+              <Link className="ulinks" to="bucketlist">
                 <img src="/bucket.png" alt="" />
                 <span>Bucket List</span>
-              </div>
-              <div>
+              </Link>
+              <Link className="ulinks" to="bookmarks">
                 <img src="/bookmark.png" alt="" />
                 <span>Bookmarks</span>
-              </div>
+              </Link>
             </div>
           </div>
           <div className="route-elements">
             <div className="underitems">
               <h3>Contacts</h3>
-              <div>
+              <a href="mailto:oberegeraldjackson@gmail.com" target="_blank">
                 <img src="/email.png" alt="" />
                 <span>Shoot me an email !</span>
-              </div>
-              <div>
+              </a>
+
+              <a href="https://x.com/Jackson__Gerald" target="blank">
                 <img src="/twitter.png" alt="" />
                 <span>@Jackson__Gerald</span>
-              </div>
-              <div>
+              </a>
+
+              <a href="https://x.com/Jackson__Gerald" target="blank">
                 <img src="/linkedin.png" alt="" />
                 <span>Connect with me on LinkedIn</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
         <div className="page-content">
-          {toggle ? <Popup /> : null}
+          {toggle ? <Popup clickToggler={handleToggle} /> : null}
           <Outlet />
         </div>
       </main>

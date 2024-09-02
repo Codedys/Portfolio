@@ -7,6 +7,7 @@ import Blog from "../components/blog/Blog";
 import Timeline from "../components/timeline/Timeline";
 import Bucketlist from "../components/bucketlist/Bucketlist";
 import Bloglist from "../components/bloglist/Bloglist";
+import Bookmarks from "../components/bookmarks/Bookmarks";
 import {posts}  from "./query";
 import { allPublications } from "../components/bloglist/Bloglist";
 
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "timeline",
         element: <Timeline />,
+      },
+      {
+        path: "bookmarks",
+        element: <Bookmarks />,
       },
       {
         path: "bucketlist",

@@ -1,20 +1,29 @@
-import "./popup.css"
+import "./popup.css";
+import { Link } from "react-router-dom";
+const Popup = ({ clickToggler }) => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/jacksonobere.pdf";
+    link.download = "ObereCv.pdf";
+    link.click();
+    clickToggler();
+  };
 
-const Popup = () => {
   return (
     <div className="popup-main">
-      <div>
+      <div onClick={handleDownload}>
         <img src="/cv.png" alt="" />
         <span>My CV</span>
       </div>
-      <div>
+      <Link  onClick={()=>{clickToggler()}} className="lis" to="/bucketlist">
         <img src="/bucket.png" alt="" />
         <span>Bucket List</span>
-      </div>
-      <div>
+      </Link>
+
+      <Link onClick={()=>{clickToggler()}}  className="lis" to="bookmarks">
         <img src="/bookmark.png" alt="" />
         <span>Bookmarks</span>
-      </div>
+      </Link>
     </div>
   );
 };
