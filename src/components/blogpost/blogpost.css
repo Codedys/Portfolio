@@ -1,59 +1,56 @@
-.blogpost-main{
-    height: 100%;
-    width: 90%;
-    margin-top: 10px;
-    overflow-y: auto;
-    padding-right: 10px;
 
-    .content{
+ .blogpost-main {
+  height: 100%;
+  width: 90%;
+  margin-top: 10px;
+  overflow-y: auto;
+  padding-right: 10px;
+
+  .content {
+    width: 100%;
+
+    img {
       width: 100%;
-      img{
-        width: 100%;
-        height: auto; 
-        object-fit: contain;
-      }
-      
-      
-      
-      .copy-button {
-        position: absolute;
-        top: 2px;
-        right: 2px;
-        background-color: #e6ebe7;
-        color: #0c0b0b;
-        border: none;
-        padding: 5px 10px;
-        cursor: pointer;
-        font-size: 13px;
-        border-radius: 3px 3px 3px 3px;
-        opacity: 0.7;
-      }
-      
-      .copy-button:hover {
-        opacity: 1;
-      }
-      
-      pre {
-        position: relative;
-        overflow: auto;
-      }
-      
-      
-      pre code {
-        padding-right: 50px;
-      }
+      height: auto;
+      object-fit: contain;
     }
-  
+
+    .copy-button {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      background-color: var(--sidebar-bg-color); 
+      color: var(--text-color); 
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 13px;
+      border-radius: 3px 3px 3px 3px;
+      opacity: 0.7;
+    }
+
+    .copy-button:hover {
+      opacity: 1;
+    }
+
+    pre {
+      position: relative;
+      overflow: auto;
+    }
+
+    pre code {
+      padding-right: 50px;
+    }
+  }
 }
+
 @media (max-width: 480px) {
-  .blogpost-main{
+  .blogpost-main {
     height: 100%;
     width: 100%;
     margin-top: 10px;
     overflow-y: auto;
     padding-right: 5px;
   }
-
 }
-
 

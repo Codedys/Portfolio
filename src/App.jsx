@@ -123,7 +123,7 @@ const App = () => {
                 <img src="/bucket.png" alt="" />
                 <span>Bucket List</span>
               </Link>
-              <Link className="ulinks">
+              <Link className="ulinks" to="bookmarks">
                 <img src="/bookmark.png" alt="" />
                 <span>Bookmarks</span>
               </Link>

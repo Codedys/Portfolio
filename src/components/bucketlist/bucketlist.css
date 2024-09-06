@@ -1,49 +1,49 @@
-.bucketlist-main{
 
+
+.bucketlist-main {
     height: 100%;
     width: 100%;
     margin-top: 10px;
     overflow-y: auto;
-    
-    h1{
-        margin-top: 20px;
-
+  
+    h1 {
+      margin-top: 20px;
     }
-    p{
-        margin-top: 20px;
-        line-height: 25PX;
+  
+    p {
+      margin-top: 20px;
+      line-height: 25px;
     }
-    .bucketlist-cards{
-
-        height: fit-content;
+  
+    .bucketlist-cards {
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+  
+      .b-card {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap:  10px;
-        margin-top: 20px;
-
-
-        .b-card{
-            width: 100%;
-            height: fit-content;
-            padding: 10px;
-            background-color: white;
-            border: 2px solid rgb(226,232,240);
-            border-radius: 5px;
-
-            h5{
-                margin-top: 2px;
-                font-size: medium;
-            }
-            p{
-                margin-top: 2px;
-                
-                
-            }
-            &:hover{
-                background-color: rgb(216, 224, 231);
-            }
+        height: fit-content;
+        padding: 10px;
+        background-color: var(--background-color); 
+        border: 2px solid var(--border-color); 
+        border-radius: 5px;
+  
+        h5 {
+          margin-top: 2px;
+          font-size: medium;
         }
-
+  
+        p {
+          margin-top: 2px;
+        }
+  
+        &:hover {
+          background-color: var(--sidebar-bg-color); 
+        }
+      }
     }
-}
+  }
+  

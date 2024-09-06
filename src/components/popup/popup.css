@@ -1,17 +1,18 @@
+
+
 .popup-main {
   height: fit-content;
   width: fit-content;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(241, 245, 249, 0.945);
+  background-color: var(--sidebar-bg-color); 
   gap: 20px;
-  border: 2px solid rgba(159, 166, 168, 0.329);
+  border: 2px solid var(--border-color); 
   border-radius: 20px;
   position: fixed;
   bottom: 60px;
   right: 10px;
-
 
   div {
     img {
@@ -41,3 +42,4 @@
     }
   }
 }
+
