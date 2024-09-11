@@ -1,9 +1,10 @@
 import { Outlet, Link, NavLink } from "react-router-dom";
 import Popup from "./components/popup/Popup";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -14,6 +15,13 @@ const App = () => {
   const handleToggle = () => {
     setToggle(!toggle);
   };
+  // useEffect(() => {
+  //   if (darkMode) {
+  //     document.body.classList.add('dark-theme');
+  //   } else {
+  //     document.body.classList.remove('dark-theme');
+  //   }
+  // }, [darkMode]);
 
   return (
     <div className="container">
@@ -24,14 +32,18 @@ const App = () => {
             <h3>Gerald Jackson</h3>
             <span>Software Engineer</span>
           </div>
-          <img className="icon" src="/light.png" alt="" />
+          {/* <img
+            onClick={() => {setDarkMode((previous)=>!previous)}}
+            className="icon"
+            src={darkMode ? "/light.png" : "/dark.png"}
+            alt=""
+          /> */}
         </div>
         <div className="socials">
           <a href=""></a>
           <img src="/email.png" alt="" />
           <a href=""></a>
           <img src="/linkedin.png" alt="" />
-
           <img src="/twitter.png" alt="" />
         </div>
       </nav>
@@ -41,10 +53,7 @@ const App = () => {
           <div className="route-elements">
             <NavLink
               className={({ isActive, isPending }) =>
-                `links ${
-
-                  isPending ? "pending" : isActive ? "active" : ""
-                }`
+                `links ${isPending ? "pending" : isActive ? "active" : ""}`
               }
               to="/"
             >
@@ -55,10 +64,7 @@ const App = () => {
           <div className="route-elements">
             <NavLink
               className={({ isActive, isPending }) =>
-                `links ${
-
-                  isPending ? "pending" : isActive ? "active" : ""
-                }`
+                `links ${isPending ? "pending" : isActive ? "active" : ""}`
               }
               to="timeline"
             >
@@ -69,10 +75,7 @@ const App = () => {
           <div className="route-elements">
             <NavLink
               className={({ isActive, isPending }) =>
-                `links ${
-
-                  isPending ? "pending" : isActive ? "active" : ""
-                }`
+                `links ${isPending ? "pending" : isActive ? "active" : ""}`
               }
               to="about"
             >
@@ -83,10 +86,7 @@ const App = () => {
           <div className="route-elements">
             <NavLink
               className={({ isActive, isPending }) =>
-                `links ${
-
-                  isPending ? "pending" : isActive ? "active" : ""
-                }`
+                `links ${isPending ? "pending" : isActive ? "active" : ""}`
               }
               to="projects"
             >
@@ -97,10 +97,7 @@ const App = () => {
           <div className="route-elements">
             <NavLink
               className={({ isActive, isPending }) =>
-                `links ${
-
-                  isPending ? "pending" : isActive ? "active" : ""
-                }`
+                `links ${isPending ? "pending" : isActive ? "active" : ""}`
               }
               to="blog"
             >
