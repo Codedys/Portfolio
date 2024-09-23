@@ -18,9 +18,10 @@
   
     h3 {
       margin-top: 10px;
-      span {
+       .t-link{
         margin-left: 285px;
         text-decoration: underline;
+        color:rgb(77, 101, 128) ;
       }
     }
   
@@ -66,9 +67,10 @@
   
       h3 {
         margin-top: 10px;
-        span {
+         .t-li{
           margin-left: 285px;
           text-decoration: underline;
+          color:rgb(77, 101, 128) ;
         }
       }
   

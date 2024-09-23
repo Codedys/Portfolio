@@ -1,4 +1,5 @@
 import "./home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
         engineer
       </p>
       <h3>
-        What I have been upto lately... <span> View All</span>{" "}
+        What I have been upto lately...  <Link  className="t-link" to= "/timeline">View All</Link>{" "}
       </h3>
       <div className="timeline-cards">
         <div className="t-cards">
@@ -36,7 +37,7 @@ const Home = () => {
       </div>
       <div className="project-card">
         <h3>
-          Projects I have built and shipped... <span> View All</span>{" "}
+          Projects I have built and shipped... <Link  className="t-li" to= "/projects">View All</Link>{" "}
         </h3>
 
         <div className="p-cards">
