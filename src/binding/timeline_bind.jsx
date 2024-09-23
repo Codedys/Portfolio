@@ -10,7 +10,7 @@ export const timelineData = [
     title: "PROJECT",
     name: "Built a movie suggestion web app",
     description:
-      "Tried using TypeScript and Styled-Components to build a movie suggestion web application",
+      "Used TypeScript and Styled-Components to build a movie suggestion web application",
     date: "21 July 2024 ",
   },
   {
@@ -18,13 +18,13 @@ export const timelineData = [
     name: "Revamping my personal portfolio application",
     description:
       "I have recently finished rebuilding my personal portfolio website",
-    date: " ",
+    date: " 23 Aug 2024 ",
   },
   {
     title: "UPDATE",
     name: "Trying to land an ollie in 30 days",
     description:
-      " Challenging myself to land an ollie on my skartboard in 30 days",
+      " Challenging myself to land an ollie on my skateboard in 30 days",
     date: " 23 Sep 2024 ",
   },
   {

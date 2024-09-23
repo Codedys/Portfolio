@@ -39,19 +39,27 @@
         padding: 10px;
         background-color: var(--background-color); 
         border: 2px solid var(--border-color);
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start;
   
         h5 {
-          margin-top: 10px;
-          font-size: larger;
-          font: bold;
+        
+          font-size: medium;
+          font-weight: bold; 
         }
   
         p {
-          margin-top: 10px;
+        
+          font-size: small;
+          font-weight: 400;
+          
         }
   
         .date {
-          margin-top: 30px;
+          margin-top: auto;
+          font-weight: 700;
+          
         }
   
         &:hover {

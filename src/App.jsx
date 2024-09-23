@@ -107,7 +107,7 @@ const App = () => {
           </div>
           <div className="route-elements">
             <Link onClick={handleToggle} className="desktop">
-              <img src="resources.png" alt="" />
+              <img src="/resources.png" alt="" />
               <h4>Resources</h4>
             </Link>
             <div className="underitems">

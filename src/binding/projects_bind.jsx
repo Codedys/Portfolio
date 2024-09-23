@@ -1,37 +1,44 @@
 export const projectData = [
   {
-    thumbNail: "PROJECT",
-    name: "Built a real-time chat app",
+    link: "",
+    thumbNail: "",
+    name: "HALO",
     photo: "",
     description:
-      "I recently built a real-time chat app in react and google's firebase",
+      "Real-time Chat Application",
     date: "2 Sep 2024",
   },
   {
-    thumbNail: "PROJECT",
-    title: "PROJECT",
-    name: "Built a movie suggestion web app",
+    link: "",
+    thumbNail: "",
+    name: "CENTURY",
     photo: "",
     description:
-      "Tried using TypeScript and Styled-Components to build a movie suggestion web application",
+      "Discover new movies and tv shows with filters to specify genre and languge",
     date: "21 July 2024 ",
   },
   {
-    thumbNail: "PROJECT",
-    title: "PROJECT",
-    name: "Built a movie suggestion web app",
-    photo: "",
+    link: "",
+    thumbNail: "",
+    name: "Portfolio",
     description:
-      "Tried using TypeScript and Styled-Components to build a movie suggestion web application",
-    date: "21 July 2024 ",
+      "Personal Portfolio remake",
+    date: " 23 Aug 2024 ",
   },
   {
-    thumbNail: "PROJECT",
-    title: "PROJECT",
-    name: "Built a movie suggestion web app",
-    photo: "",
+    link: "",
+    thumbNail: "",
+    name: "Network Music Player",
     description:
-      "Tried using TypeScript and Styled-Components to build a movie suggestion web application",
-    date: "21 July 2024 ",
+      "Play Music from your friends laptop from your own via Network",
+    date: "  5 Feb 2024",
+  },
+  {
+    link: "",
+    thumbNail: "",
+    name: "Wednesday",
+    description:
+      "A web scrapper that helped me find a laptop of my specification",
+    date: " 23 Jul 2024 ",
   },
 ];

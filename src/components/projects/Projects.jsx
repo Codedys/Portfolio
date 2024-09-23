@@ -1,4 +1,5 @@
 import "./projects.css"
+import { projectData } from "../../binding/projects_bind";
 
 
 const Projects = () => {
@@ -9,52 +10,22 @@ const Projects = () => {
      </p>
 
      <div className="projects-card">
-       
+      {projectData.map((data,index)=>(
 
-        <div className="cards">
-          <img src="profile.jpeg" alt="" />
+        <div key={index} className="cards">
+          <img src={data.photo} alt="" />
           <div className="description">
             <div className="title">
-              <img src="profile.jpeg" alt="" />
-              <h5>Projets</h5>
+              <img src={data.thumbNail} alt="" />
+              <h5>{data.name}</h5>
             </div>
-            <p>Real time react chat app</p>
-            <p className="date">14 May 2024</p>
+            <p>{data.description}</p>
+            <p className="date">{data.date}</p>
           </div>
         </div>
-        <div className="cards">
-          <img src="profile.jpeg" alt="" />
-          <div className="description">
-            <div className="title">
-              <img src="profile.jpeg" alt="" />
-              <h5>Projets</h5>
-            </div>
-            <p>Real time react chat app</p>
-            <p className="date">14 May 2024</p>
-          </div>
-        </div>
-        <div className="cards">
-          <img src="profile.jpeg" alt="" />
-          <div className="description">
-            <div className="title">
-              <img src="profile.jpeg" alt="" />
-              <h5>Projets</h5>
-            </div>
-            <p>Real time react chat app</p>
-            <p className="date">14 May 2024</p>
-          </div>
-        </div>
-        <div className="cards">
-          <img src="profile.jpeg" alt="" />
-          <div className="description">
-            <div className="title">
-              <img src="profile.jpeg" alt="" />
-              <h5>Projets</h5>
-            </div>
-            <p>Real time react chat app</p>
-            <p className="date">14 May 2024</p>
-          </div>
-        </div>
+     
+        ))}
+      
       </div>
 
     </div>
