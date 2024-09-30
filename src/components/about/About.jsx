@@ -8,10 +8,11 @@ const About = () => {
         <div className="text">
           <p>
             I'm a Software Engineer by training and trade. I spend most of my
-            time reading about productivity,tech, business,marketing and
-            finance. If this interests you , Welcome to my small spot of the
-            internet. Here is where i share about my w riting,info diet,software
-            and life adventures
+            time reading books about tech, self-help,fiction and philosophy. If
+            you find this interesting, Welcome to my innate domain. This is my
+            space where I give insights of my personal experiences as a junior
+            software engineer,share my technical articles and other writtings
+            together with other life adventures
           </p>
         </div>
         <img src="profile.jpeg" alt="" />

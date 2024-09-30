@@ -34,8 +34,8 @@ const Home = () => {
             View All
           </Link>{" "}
         </h3>
-        {projectData.slice(0, 3).map((data,index) => (
-          <div  key={index} className="p-cards">
+        {projectData.slice(0, 3).map((data, index) => (
+          <div key={index} className="p-cards">
             <img src={data.photo} alt="" />
             <div className="description">
               <div className="title">
