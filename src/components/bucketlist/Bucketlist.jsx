@@ -1,34 +1,18 @@
 import "./bucketlist.css";
+import { bucketListData } from "../../binding/bucketlist_bind";
 const Bucketlist = () => {
   return (
     <div className="bucketlist-main">
       <h1>🪣 Bucket List</h1>
       <p>List of Cool Things i'd want to do in life</p>
+
       <div className="bucketlist-cards">
-        <div className="b-card">
-          <h5>Climbing the great mout Kenya wit</h5>
-          <p></p>
-        </div>
-        <div className="b-card">
-          <h5>Climbing the great mout Kenya wit</h5>
-          <p>Lorem i has beem dahy to dahh businessm </p>
-        </div>
-        <div className="b-card">
-          <h5>Climbing the great mout Kenya wit</h5>
-          <p>Lorem i has beem dahy to dahh business </p>
-        </div>
-        <div className="b-card">
-          <h5>Climbing the great mout Kenya wit</h5>
-          <p>Lorem i has beem dahy to dahh business </p>
-        </div>
-        <div className="b-card">
-          <h5>Climbing the great mout Kenya wit</h5>
-          <p>Lorem i has beem dahy to dahh business </p>
-        </div>
-        <div className="b-card">
-          <h5>Climbing the great mout Kenya wit</h5>
-          <p>Lorem i has beem dahy to dahh business </p>
-        </div>
+        {bucketListData.map((data, index) => (
+          <div key={index}  className="b-card">
+            <h5 style={data.status ? { textDecoration: 'line-through' } : null}>{data.name}</h5>
+            <p>{data.description}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

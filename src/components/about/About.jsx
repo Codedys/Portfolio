@@ -11,37 +11,31 @@ const About = () => {
             time reading books about tech, self-help,fiction and philosophy. If
             you find this interesting, Welcome to my innate domain. This is my
             space where I give insights of my personal experiences as a junior
-            software engineer,share my technical articles and other writtings
-            together with other life adventures
+            software engineer,share some cool projects I am building, technical
+            articles and other writtings together with general life adventures
           </p>
         </div>
         <img src="profile.jpeg" alt="" />
       </div>
       <h3>Career</h3>
       <div className="career">
-        I'm currently availalbe for full time/contract roles , hop on acallif
-        you'd like to work together/consult 🙂 . I previously built Web frontend
-        at Echo Mobile and Identigate. In the past 5 years that i've been
-        working , I've spent the first 2 years building Mobile Apps with Android
-        + iOS and the past 3 building decent UI's as a frontend engineer. I've
-        focused most of my career in being able to design and developing
-        software products from conception to completion. In the past , i've been
-        performed as the sole developer of some projects. If you're interested
-        to know more you can me on LinkedIn or book a call. Here is a summary
-        below :.
+        I'm currently in my final year at Kenyatta University pursuing
+        Bachelor's Degree in Computer Science , I part time work at Keypad
+        Solutions and is currently availalbe for full time/contract roles 🙂 .
+        Over the course of my 4 year campus life I have worked on solo personal
+        projects that span from CLI tools to fullstack applications enjoy the
+        process of giving life to an idea, I am looking to get my footing in
+        data engineering and become a machine learning engineer while at it.If
+        interested you can connect on Linkedin or shoot me an email.
       </div>
       <h3>Life</h3>
       <div className="life">
-        I'm currently availalbe for full time/contract roles , hop on acallif
-        you'd like to work together/consult 🙂 . I previously built Web frontend
-        at Echo Mobile and Identigate. In the past 5 years that i've been
-        working , I've spent the first 2 years building Mobile Apps with Android
-        + iOS and the past 3 building decent UI's as a frontend engineer. I've
-        focused most of my career in being able to design and developing
-        software products from conception to completion. In the past , i've been
-        performed as the sole developer of some projects. If you're interested
-        to know more you can me on LinkedIn or book a call. Here is a summary
-        below :
+        If I am not writing code or snooping through open source projects
+        breaking a few things as I try to figure out how they work you will find
+        me on my hobbies. I enjoy stkateboarding and listening to old school rap
+        songs, the likes of Fat Joe and Rick Ross (I know I have refused to
+        evolve). I also enjoy exploring, trying out new stuff and dissecting
+        Kendric Lamar's lyrics.
       </div>
       <h3>Recent thoughts</h3>
       <div className="thoughts">

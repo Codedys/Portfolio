@@ -5,6 +5,11 @@
     width: 100%;
     margin-top: 10px;
     overflow-y: auto;
+
+    span{
+      color: rgb(89,137,246);
+      font-size:smaller;
+    }
   
     h1 {
       margin-top: 20px;
@@ -22,22 +27,32 @@
       flex-direction: column;
       gap: 10px;
       margin-top: 20px;
+
+      a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+      }
   
       .b-card {
         width: 100%;
         height: fit-content;
         padding: 10px;
-        background-color: var(--background-color); 
-        border: 2px solid var(--border-color); 
+        background-color: var(--background-color);
+        border: 1px solid var(--border-color);  
         border-radius: 5px;
   
         h5 {
           margin-top: 2px;
-          font-size: medium;
+          font-size: small;
+          color: black;
         }
   
         p {
           margin-top: 2px;
+          font-size: small;
         }
   
         &:hover {

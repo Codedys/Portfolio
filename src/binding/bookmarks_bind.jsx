@@ -1,22 +1,39 @@
-export const bucketListData = [
+export const bookMarkData = [
     {
-      name: "Built a real-time chat app",
-      description:
-        "I recently built a real-time chat app in react and google's firebase",
+      name: "Backend Banter",
+      link:"https://open.spotify.com/show/35trT95UkRVCkEb6tXndpF",
+      content:"Podcast"
     },
     {
-      name: "Built a movie suggestion web app",
-      description:
-        "Tried using TypeScript and Styled-Components to build a movie suggestion web application",
+      name: "The Primeagen",
+      link:"https://www.youtube.com/results?search_query=theprimeagen",
+      content:"Youtube"
     },
     {
-      name: "Built a movie suggestion web app",
-      description:
-        "Tried using TypeScript and Styled-Components to build a movie suggestion web application",
+      name: "The Gulag Archipelago by  Aleksandr Solzhenitsyn ",
+      link:"https://www.amazon.com/Gulag-Archipelago-1918-1956-Experiment-Investigation/dp/0813332893",
+      content:"Reading"
     },
     {
-      name: "Built a movie suggestion web app",
-      description:
-        "Tried using TypeScript and Styled-Components to build a movie suggestion web application",
+      name: "Whiskey Web and Whatnot",
+      link:"https://open.spotify.com/show/19jiuHAqzeKnkleQUpZxDf",
+      content:"Podcast"
     },
+    {
+      name: "The Mara Nomads'",
+      link:"https://www.youtube.com/@TheMaraNomads1920MN",
+      content:"Youtube"
+    },
+    {
+      name: "Low Level",
+      link:"https://www.youtube.com/@LowLevel-TV",
+      content:"Youtube"
+    },
+    {
+      name: "The President's Daughter by Bill Clinton",
+      link:"https://www.amazon.com/Presidents-Daughter-Thriller-James-Patterson/dp/0316540714",
+      content:"Reading"
+    },
+    
+    
   ];

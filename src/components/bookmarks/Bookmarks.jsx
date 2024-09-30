@@ -1,4 +1,5 @@
-import ".././bucketlist/bucketlist.css"
+import ".././bucketlist/bucketlist.css";
+import { bookMarkData } from "../../binding/bookmarks_bind";
 
 const Bookmarks = () => {
   return (
@@ -6,33 +7,15 @@ const Bookmarks = () => {
       <h1>📑 Bookmarks</h1>
       <p> Here are some of the content I consume</p>
       <div className="bucketlist-cards">
-        <div className="b-card">
-          <h5>Climbing the great mout Kenya wit</h5>
-          <p></p>
-        </div>
-        <div className="b-card">
-          <h5>Climbing the great mout Kenya wit</h5>
-          <p>Lorem i has beem dahy to dahh businessm </p>
-        </div>
-        <div className="b-card">
-          <h5>Climbing the great mout Kenya wit</h5>
-          <p>Lorem i has beem dahy to dahh business </p>
-        </div>
-        <div className="b-card">
-          <h5>Climbing the great mout Kenya wit</h5>
-          <p>Lorem i has beem dahy to dahh business </p>
-        </div>
-        <div className="b-card">
-          <h5>Climbing the great mout Kenya wit</h5>
-          <p>Lorem i has beem dahy to dahh business </p>
-        </div>
-        <div className="b-card">
-          <h5>Climbing the great mout Kenya wit</h5>
-          <p>Lorem i has beem dahy to dahh business </p>
-        </div>
+        {bookMarkData.map((data, index) => (
+          <a key={index} href={data.link} className="b-card">
+            <h5>{data.name}</h5>
+            <span>{data.content}</span>
+          </a>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Bookmarks
+export default Bookmarks;

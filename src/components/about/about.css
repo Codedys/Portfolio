@@ -9,7 +9,7 @@
       margin-top: 25px;
     }
     h3 {
-      margin-top: 45px;
+      margin-top: 30px;
       font: bolder;
     }
     .about-me {
@@ -17,6 +17,8 @@
       display: flex;
       gap: 20px;
       margin-top: 25px;
+      padding-bottom: 45px;
+      
   
       .text {
         height: 180px;
@@ -96,6 +98,7 @@
         flex-direction: column;
         gap: 20px;
         margin-top: 25px;
+        padding-bottom: 0px;
   
         .text {
           height: 100%;
