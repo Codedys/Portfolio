@@ -156,7 +156,7 @@
   
       h3 {
         margin-top: 10px;
-        span {
+        .t-link {
           margin-left: 0px;
           text-decoration: underline;
         }
@@ -207,7 +207,7 @@
   
         h3 {
           margin-top: 10px;
-          span {
+          .t-li{
             margin-left: 0px;
             text-decoration: underline;
           }

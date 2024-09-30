@@ -15,7 +15,7 @@ const About = () => {
             articles and other writtings together with general life adventures
           </p>
         </div>
-        <img src="profile.jpeg" alt="" />
+        <img src="aboutpart.jpeg" alt="" />
       </div>
       <h3>Career</h3>
       <div className="career">
