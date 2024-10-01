@@ -9,7 +9,7 @@ const Projects = () => {
 
       <div className="projects-card">
         {projectData.map((data, index) => (
-          <div key={index} className="cards">
+          <a  style={{ textDecoration: 'none', color: 'inherit' }}  href={data.link} key={index} className="cards" target="blank">
             <img src={data.photo} alt="" />
             <div className="description">
               <div className="title">
@@ -19,7 +19,7 @@ const Projects = () => {
               <p>{data.description}</p>
               <p className="date">{data.date}</p>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

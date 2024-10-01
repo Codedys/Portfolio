@@ -8,7 +8,7 @@ const Bookmarks = () => {
       <p> Here are some of the content I consume</p>
       <div className="bucketlist-cards">
         {bookMarkData.map((data, index) => (
-          <a key={index} href={data.link} className="b-card">
+          <a key={index} href={data.link} className="b-card" target="blank">
             <h5>{data.name}</h5>
             <span>{data.content}</span>
           </a>

@@ -10,7 +10,7 @@ const Home = () => {
       <p>
         My name is Gerald Jackson, welcome to my innate domain! <br />I am a
         Software Engineer in Nairobi Kenya 🇰🇪. I love building Software and over
-        engineer
+        engineering
       </p>
       <h3>
         What I have been upto lately...{" "}
@@ -35,7 +35,7 @@ const Home = () => {
           </Link>{" "}
         </h3>
         {projectData.slice(0, 3).map((data, index) => (
-          <div key={index} className="p-cards">
+          <a style={{ textDecoration: 'none', color: 'inherit' }} href={data.link} key={index} className="p-cards" target="blank" >
             <img src={data.photo} alt="" />
             <div className="description">
               <div className="title">
@@ -45,7 +45,7 @@ const Home = () => {
               <p>{data.description}</p>
               <p className="date">{data.date}</p>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

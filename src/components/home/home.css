@@ -87,8 +87,8 @@
         height: fit-content;
         display: flex;
         align-items: center;
-        border: 2px solid var(--border-color); 
-        border-radius: 10px;
+        border: 1.2px solid var(--border-color); 
+        border-radius: 5px;
         gap: 10px;
         margin-top: 20px;
   
@@ -99,8 +99,9 @@
         img {
           height: 230px;
           width: 200px;
+          border: 1.2px solid var(--border-color); 
           object-fit: cover;
-          border-radius: 10px;
+          border-radius: 0px;
         }
   
         .description {
