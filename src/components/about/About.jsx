@@ -39,33 +39,33 @@ const About = () => {
       </div>
       <h3>Recent thoughts</h3>
       <div className="thoughts">
-        <a href="https://www.example.com" target="_blank">
-          Permisionless path
+        <a href="https://oberejackson.vercel.app/blog/661653ad8d11bcf90baed36e" target="_blank">
+          Comparing Solidity with Clarity
         </a>
-        <p>How I got into SWE and all</p>
+        <p>Writing smart contracts for Bitcoin was limited in the past</p>
         <div className="date">
           <img src="clock.png" alt="" />
-          <p>Fri Dec 2024</p>
+          <p>Fri Dec 2023</p>
         </div>
       </div>
       <div className="thoughts">
-        <a href="https://www.example.com" target="_blank">
-          Permisionless path
+        <a href="https://oberejackson.vercel.app/blog/6621743cbe424d2d968e6c0f" target="_blank">
+        Building on Bitcoin Layers With the Hiro Platform
         </a>
-        <p>How I got into SWE and all</p>
+        <p>Bitcoin is the highest-valued token on the planet</p>
         <div className="date">
           <img src="clock.png" alt="" />
-          <p>Fri Dec 2024</p>
+          <p>Mon Jan 2024</p>
         </div>
       </div>
       <div className="thoughts">
-        <a href="https://www.example.com" target="_blank">
-          Permisionless path
+        <a href="https://oberejackson.vercel.app/blog/660468b71b0b20cc9a2b4e9e" target="_blank">
+          
         </a>
-        <p>How I got into SWE and all</p>
+        <p>This tutorial shows how to create a token-gated website using Clarity </p>
         <div className="date">
           <img src="clock.png" alt="" />
-          <p>Fri Dec 2024</p>
+          <p>Tue May 2024</p>
         </div>
       </div>
     </div>
