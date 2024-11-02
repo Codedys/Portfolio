@@ -60,6 +60,7 @@ const About = () => {
       </div>
       <div className="thoughts">
         <a href="https://oberejackson.vercel.app/blog/660468b71b0b20cc9a2b4e9e" target="_blank">
+        Creating a Token-Gated Web Page With Clarity
           
         </a>
         <p>This tutorial shows how to create a token-gated website using Clarity </p>
