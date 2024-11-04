@@ -1,6 +1,6 @@
 import { Outlet, Link, NavLink } from "react-router-dom";
 import Popup from "./components/popup/Popup";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -40,11 +40,18 @@ const App = () => {
           /> */}
         </div>
         <div className="socials">
-          <a href=""></a>
-          <img src="/email.png" alt="" />
-          <a href=""></a>
-          <img src="/linkedin.png" alt="" />
-          <img src="/twitter.png" alt="" />
+          <a href="mailto:oberegeraldjackson@gmail.com" target="_blank">
+            <img src="/email.png" alt="" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jackson-obere-16ba85330/"
+            target="blank"
+          >
+            <img src="/linkedin.png" alt="" />
+          </a>
+          <a href="https://x.com/Jackson__Gerald" target="blank">
+            <img src="/twitter.png" alt="" />
+          </a>
         </div>
       </nav>
 
@@ -139,7 +146,10 @@ const App = () => {
                 <span>@Jackson__Gerald</span>
               </a>
 
-              <a href="https://x.com/Jackson__Gerald" target="blank">
+              <a
+                href="https://www.linkedin.com/in/jackson-obere-16ba85330/"
+                target="blank"
+              >
                 <img src="/linkedin.png" alt="" />
                 <span>Connect with me on LinkedIn</span>
               </a>
