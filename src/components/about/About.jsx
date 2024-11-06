@@ -7,35 +7,19 @@ const About = () => {
       <div className="about-me">
         <div className="text">
           <p>
-            I'm a Software Engineer by training and trade. I spend most of my
-            time reading books about tech, self-help,fiction and philosophy. If
-            you find this interesting, Welcome to my innate domain. This is my
-            space where I give insights of my personal experiences as a junior
-            software engineer,share some cool projects I am building, technical
-            articles and other writtings together with general life adventures
+          I'm a Software Engineer by training and trade. I spend most of my time reading books about tech, self-help, fiction, and philosophy. If you find this interesting, welcome to my domain. This is the space where I share insights from my personal experiences as a junior software engineer, showcase some cool projects I'm building, post technical articles, and write about general life adventures.
           </p>
         </div>
         <img src="aboutpart.jpeg" alt="" />
       </div>
+      
       <h3>Career</h3>
       <div className="career">
-        I'm currently in my final year at Kenyatta University pursuing
-        Bachelor's Degree in Computer Science , I part time work at Keypad
-        Solutions and is currently availalbe for full time/contract roles 🙂 .
-        Over the course of my 4 year campus life I have worked on solo personal
-        projects that span from CLI tools to fullstack applications enjoy the
-        process of giving life to an idea, I am looking to get my footing in
-        data engineering and become a machine learning engineer while at it.If
-        interested you can connect on Linkedin or shoot me an email.
+      I'm currently in my final year at Kenyatta University, pursuing a Bachelor's Degree in Computer Science. I work part-time at Keypad Solutions and I am currently available for full-time or contract roles 🙂. Over the course of my four years at university, I've worked on personal projects ranging from CLI tools to fullstack applications. I enjoy bringing ideas to life and  I am looking to establish myself in data engineering, with a goal of becoming a machine learning engineer. If you're interested, feel free to connect with me on LinkedIn or send me an email.
       </div>
       <h3>Life</h3>
       <div className="life">
-        If I am not writing code or snooping through open source projects
-        breaking a few things as I try to figure out how they work you will find
-        me on my hobbies. I enjoy stkateboarding and listening to old school rap
-        songs, the likes of Fat Joe and Rick Ross (I know I have refused to
-        evolve). I also enjoy exploring, trying out new stuff and dissecting
-        Kendric Lamar's lyrics.
+      If I'm not writing code or exploring open-source projects (and breaking a few things as I try to figure out how they work), you'll find me enjoying my hobbies. I love skateboarding and listening to old-school rap artists like Fat Joe and Rick Ross (I know, I've refused to evolve). I also enjoy exploring, trying out new things, and dissecting Kendrick Lamar's lyrics.
       </div>
       <h3>Recent thoughts</h3>
       <div className="thoughts">

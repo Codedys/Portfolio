@@ -7,7 +7,7 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const handleDownload = () => {
-    const link = document.createElement("a");
+    const link = document.createElement("a"); 
     link.href = "/jacksonobere.pdf";
     link.download = "ObereCv.pdf";
     link.click();
